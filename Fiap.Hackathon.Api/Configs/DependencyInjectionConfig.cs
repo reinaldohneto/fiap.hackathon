@@ -4,6 +4,7 @@ using Fiap.Hackathon.Application.Profiles;
 using Fiap.Hackathon.Application.Services;
 using Fiap.Hackathon.Application.Services.Common;
 using Fiap.Hackathon.Application.Services.User;
+using Fiap.Hackathon.Application.Services.Video;
 
 namespace Fiap.Hackathon.Api.Configs;
 
@@ -16,6 +17,6 @@ public static class DependencyInjectionConfig
 
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAuthenticationService, AuthenticationService>();
-        
+        services.AddScoped<IVideoService, VideoService>();
     }
 }

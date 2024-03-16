@@ -1,9 +1,10 @@
-using Fiap.Hackathon.Domain;
-using Fiap.Hackathon.Infra;
+using Fiap.Hackathon.Infra.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Fiap.Hackathon.Api.Configs;
+namespace Fiap.Hackathon.Infra.Config;
 
 public static class DatabaseConfiguration
 {
@@ -11,7 +12,7 @@ public static class DatabaseConfiguration
         IConfiguration config)
     {
         services.AddDbContext<FiapHackathonDbContext>(opt =>
-                opt.UseSqlServer(config.GetValue<string>("ConnectionStrings:Fiap.Hackathon"),
+                opt.UseSqlServer(config.GetConnectionString("Fiap.Hackathon"),
                     b => b.MigrationsAssembly("Fiap.Hackathon.Infra")))
             .AddIdentity<IdentityUser, IdentityRole>(
                 opt =>
@@ -25,7 +26,8 @@ public static class DatabaseConfiguration
                     opt.Password.RequiredLength = 6;
                     opt.Password.RequiredUniqueChars = 1;
                 })
-            .AddEntityFrameworkStores<FiapHackathonDbContext>()
-            .AddApiEndpoints();
+            .AddEntityFrameworkStores<FiapHackathonDbContext>();
+
+        services.AddScoped<IVideoRepository, VideoRepository>();
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fiap.Hackathon.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39f6eabf7230c6f2bf944d97650d96b2bb2549b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e352dac9d894ff3a5c4ac076800de537d94f13cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fiap.Hackathon.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fiap.Hackathon.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

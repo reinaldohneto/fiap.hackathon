@@ -1,4 +1,5 @@
 using Fiap.Hackathon.Domain;
+using Fiap.Hackathon.Domain.Video.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

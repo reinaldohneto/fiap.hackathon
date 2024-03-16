@@ -1,4 +1,5 @@
 using Fiap.Hackathon.Domain;
+using Fiap.Hackathon.Domain.Video.Entities;
 using Fiap.Hackathon.Infra.Maps.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

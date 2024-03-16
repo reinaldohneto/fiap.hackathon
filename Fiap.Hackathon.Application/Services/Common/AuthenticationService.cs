@@ -2,7 +2,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Fiap.Hackathon.Application.Common;
-using Fiap.Hackathon.Application.Dtos;
 using Fiap.Hackathon.Application.Dtos.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
