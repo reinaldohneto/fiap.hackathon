@@ -9,8 +9,7 @@ public class UserInputDtoValidator : AbstractValidator<UserInputDto>
     public UserInputDtoValidator()
     {
         RuleFor(u => u.Email)
-            .NotEmpty()
-            .MaximumLength(256);
+            .EmailAddress();
 
         RuleFor(u => u.UserName)
             .NotEmpty()
