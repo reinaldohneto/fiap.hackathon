@@ -34,6 +34,8 @@ public class VideoService(NotificationContext notificationContext,
         
         var command = mapper.Map<CreateVideoCommand>(dto);
 
+        command.User = user;
+        
         await publishEndpoint.Publish(command);
 
         return mapper.Map<VideoCreatedResponseDto>(command);

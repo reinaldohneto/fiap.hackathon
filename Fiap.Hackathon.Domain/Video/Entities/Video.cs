@@ -10,5 +10,5 @@ public class Video : BaseEntity
     public string SnapshotsBase64 { get; set; } = string.Empty;
 
     public string UserId { get; set; } = string.Empty;
-    public virtual required IdentityUser User { get; set; }
+    public virtual IdentityUser User { get; set; }
 }

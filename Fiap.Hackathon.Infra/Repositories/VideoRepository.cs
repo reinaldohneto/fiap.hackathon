@@ -23,4 +23,13 @@ public class VideoRepository(FiapHackathonDbContext fiapHackathonDbContext) : IV
         => await _fiapHackathonDbContext
             .Videos
             .ToListAsync();
+
+    public async Task Update(Video video)
+    {
+        _fiapHackathonDbContext
+            .Videos
+            .Update(video);
+
+        await _fiapHackathonDbContext.SaveChangesAsync();
+    }
 }

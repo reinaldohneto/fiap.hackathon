@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fiap.Hackathon.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ede684c59f6539fa9c525c0a6077d99de4af38a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e352dac9d894ff3a5c4ac076800de537d94f13cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fiap.Hackathon.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fiap.Hackathon.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
