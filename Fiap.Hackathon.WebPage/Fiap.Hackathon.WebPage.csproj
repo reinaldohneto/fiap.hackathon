@@ -14,4 +14,8 @@
     <ProjectReference Include="..\Fiap.Hackathon.Application\Fiap.Hackathon.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
 </Project>

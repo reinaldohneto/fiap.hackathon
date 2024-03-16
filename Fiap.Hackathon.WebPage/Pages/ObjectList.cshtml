@@ -1,4 +1,31 @@
 ﻿@page
 @model ObjectListModel
 @{
+    ViewData["Title"] = "Lista de vídeos";
 }
+
+<div class="container div-container">
+    @if (Model.Videos.Any())
+    {
+        <div class="row">
+            @foreach (var catalogItem in Model.Videos)
+            {
+                <div class="component-div">
+                    <partial name="_component" for="@catalogItem" />
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <h1 class="white-text">Não há nenhum video criado.</h1>
+        </div>
+    }
+</div>
+<div class="container">
+    <button class="round-btn">
+        <a asp-page="Create" />
+        <img src="~/images/add.png" alt="Adicionar novo meme" height="40" width="40" />
+    </button>
+</div>
