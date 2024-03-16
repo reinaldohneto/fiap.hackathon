@@ -1,0 +1,68 @@
+﻿.login-div {
+    width: 400px;
+    height: 350px;
+    margin-top: 20%;
+    background: #f6f6f6;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.div-bottom {
+    position: absolute;
+    display: inline-block;
+    margin-inline: 5px;
+    left: 40%;
+    bottom: 3%;
+}
+
+.div-text {
+    left: 50%;
+}
+
+.label-text {
+    color: #000;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.label-text-expose-margin {
+    color: #000;
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.div-row-space{
+    margin-top: 25px;
+}
+
+.div-row-space-with-lateral-margin {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.div-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+}
+
+.image-class {
+    margin-top: 15%;
+    margin-left: 50px;
+    width: 570px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.button-bottom {
+    background-color: #4B92DE;
+    display: inline-block;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: auto;
+    height: 36px;
+    margin-left: 15px;
+}

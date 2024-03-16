@@ -1,3 +1,4 @@
+using Fiap.Hackathon.WebPage.Models.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -12,9 +13,10 @@ namespace Fiap.Hackathon.WebPage.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public async Task<IActionResult> OnPostAsync(string email, string senha)
         {
-
+            var user = new UserLoginDto(email, senha);
+            return Redirect("./ObjectList");
         }
     }
 }
