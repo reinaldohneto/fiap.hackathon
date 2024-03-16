@@ -1,3 +1,12 @@
+using Fiap.Hackathon.Api.Configs;
+using Fiap.Hackathon.Application.Common;
+using Fiap.Hackathon.Application.Dtos;
+using Fiap.Hackathon.Application.Dtos.User;
+using Fiap.Hackathon.Application.Services;
+using Fiap.Hackathon.Application.Services.User;
+using Fiap.Hackathon.Infra;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,40 +14,33 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.ConfigureDatabase(builder.Configuration);
+
+builder.Services.ConfigureDependencyInjection();
+builder.Services.ConfigureAuthentication(builder.Configuration);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (!app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    using var scope = app.Services.CreateScope();
+    await scope.ServiceProvider.GetRequiredService<FiapHackathonDbContext>()
+        .Database.MigrateAsync();
 }
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.MapPost("create", async (IUserService service, 
+        UserInputDto dto) => await service.CreateAsync(dto))
+    .Produces<UserAuthorizedDto>()
+    .Produces<ICollection<Notification>>(statusCode: 400);
 
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi();
+app.MapPost("login", async (IUserService service,
+        UserLoginDto dto) => await service.LoginAsync(dto))
+    .Produces<UserAuthorizedDto>()
+    .Produces<ICollection<Notification>>(statusCode: 400);
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
