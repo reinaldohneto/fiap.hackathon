@@ -8,6 +8,16 @@
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.create-user-div {
+    width: 400px;
+    height: 500px;
+    margin-top: 20%;
+    background: #f6f6f6;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .div-bottom {
     position: absolute;
     display: inline-block;
@@ -65,4 +75,15 @@
     width: auto;
     height: 36px;
     margin-left: 15px;
+}
+
+.button-bottom-for-create-user {
+    background-color: #4B92DE;
+    display: inline-block;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: auto;
+    height: 36px;
+    margin-left: -15px;
 }
