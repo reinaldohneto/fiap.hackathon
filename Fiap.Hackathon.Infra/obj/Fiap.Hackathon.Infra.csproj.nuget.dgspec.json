@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Infra\\Fiap.Hackathon.Infra.csproj": {}
+  },
+  "projects": {
+    "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Domain\\Fiap.Hackathon.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Domain\\Fiap.Hackathon.Domain.csproj",
+        "projectName": "Fiap.Hackathon.Domain",
+        "projectPath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Domain\\Fiap.Hackathon.Domain.csproj",
+        "packagesPath": "C:\\Users\\reina\\.nuget\\packages\\",
+        "outputPath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\reina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/terrainvest/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Infra\\Fiap.Hackathon.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Infra\\Fiap.Hackathon.Infra.csproj",
+        "projectName": "Fiap.Hackathon.Infra",
+        "projectPath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Infra\\Fiap.Hackathon.Infra.csproj",
+        "packagesPath": "C:\\Users\\reina\\.nuget\\packages\\",
+        "outputPath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\reina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/terrainvest/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Domain\\Fiap.Hackathon.Domain.csproj": {
+                "projectPath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Domain\\Fiap.Hackathon.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

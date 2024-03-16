@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Hackathon.Api", "Fiap.Hackathon.Api\Fiap.Hackathon.Api.csproj", "{50E9E330-0A49-45CD-B4E9-2CFC5F08E6EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Hackathon.Worker", "Fiap.Hackathon.Worker\Fiap.Hackathon.Worker.csproj", "{CEB1AC98-8E66-4549-BECE-672EE4890245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Hackathon.Domain", "Fiap.Hackathon.Domain\Fiap.Hackathon.Domain.csproj", "{B739F366-B3DF-496B-B600-D342814992A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Hackathon.Infra", "Fiap.Hackathon.Infra\Fiap.Hackathon.Infra.csproj", "{5B8280EB-D2CA-4CBF-8303-C1DDCE719526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Hackathon.Application", "Fiap.Hackathon.Application\Fiap.Hackathon.Application.csproj", "{0A278A96-385C-4947-802F-A234C89C5E11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50E9E330-0A49-45CD-B4E9-2CFC5F08E6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E9E330-0A49-45CD-B4E9-2CFC5F08E6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E9E330-0A49-45CD-B4E9-2CFC5F08E6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E9E330-0A49-45CD-B4E9-2CFC5F08E6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB1AC98-8E66-4549-BECE-672EE4890245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB1AC98-8E66-4549-BECE-672EE4890245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB1AC98-8E66-4549-BECE-672EE4890245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB1AC98-8E66-4549-BECE-672EE4890245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B739F366-B3DF-496B-B600-D342814992A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B739F366-B3DF-496B-B600-D342814992A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B739F366-B3DF-496B-B600-D342814992A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B739F366-B3DF-496B-B600-D342814992A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8280EB-D2CA-4CBF-8303-C1DDCE719526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8280EB-D2CA-4CBF-8303-C1DDCE719526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8280EB-D2CA-4CBF-8303-C1DDCE719526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8280EB-D2CA-4CBF-8303-C1DDCE719526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A278A96-385C-4947-802F-A234C89C5E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A278A96-385C-4947-802F-A234C89C5E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A278A96-385C-4947-802F-A234C89C5E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A278A96-385C-4947-802F-A234C89C5E11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
