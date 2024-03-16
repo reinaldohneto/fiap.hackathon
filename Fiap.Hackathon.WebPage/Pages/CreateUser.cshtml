@@ -1,0 +1,41 @@
+﻿@page
+@model CreateUserModel
+@{
+    ViewData["Title"] = "Criação de usuário";
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+}
+
+<div class="container create-user-div">
+    <form method="post">
+        <div class="container">
+            @*UserName*@
+            <div class="row div-row-space">
+                <label class="label-text-expose-margin">Nome de usuário</label>
+                <input class="input-name" name="username" />
+            </div>
+            @*UserEmail*@
+            <div class="row div-row-space">
+                <label class="label-text">E-mail</label>
+                <input class="input-name" name="email" />
+            </div>
+            @*Password*@
+            <div class="row div-row-space">
+                <label class="label-text">Senha</label>
+                <input type="password" class="input-name" name="password" />
+            </div>
+            @*Password*@
+            <div class="row div-row-space">
+                <label class="label-text">Senha</label>
+                <input type="password" class="input-name" name="passwordConfirmation" />
+            </div>
+        </div>
+        <div class="div-bottom">
+            <input type="submit" class="button-bottom-for-create-user" value="Criar usuário" />
+        </div>
+    </form>
+</div>

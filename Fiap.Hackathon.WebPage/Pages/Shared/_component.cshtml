@@ -1,0 +1,12 @@
+﻿@model Fiap.Hackathon.WebPage.Models.VideoDto
+
+<form asp-page="./ObjectList" method="get">
+    <button class="component-item">
+        <img src="~/images/botao-de-download.png" alt="Baixar" height="40" width="40" />
+
+        <div class="component-name">
+            <span>@Model.VideoName</span>
+        </div>
+    </button>
+    <input type="hidden" asp-for="@Model.ZipFile" name="file" />
+</form>

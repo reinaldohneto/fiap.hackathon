@@ -1,0 +1,11 @@
+﻿.header-div {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background: #4B92DE;
+}
+
+.div-container {
+    margin-top: 150px;
+}
