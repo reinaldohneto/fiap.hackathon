@@ -1,3 +1,5 @@
+using Fiap.Hackathon.WebPage.Services;
+
 namespace Fiap.Hackathon.WebPage
 {
     public class Program
@@ -8,6 +10,7 @@ namespace Fiap.Hackathon.WebPage
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.ConfigureDependencyInjection();
 
             var app = builder.Build();
 
