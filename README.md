@@ -22,3 +22,6 @@ Acesse o sistema através do seguinte URL: [url-do-sistema].
 Clique em "Registrar" para criar uma nova conta ou faça login se já tiver uma conta.
 Na página principal, você verá um input para fazer o upload do vídeo.
 Então você poderá consultar a lista de vídeos disponíveis e fazer download.
+
+**O propjeto está com Migrations do EF Core e em ambientes não produtivos a própria aplicação sobe a database!**
+**De qualquer forma, na raiz do projeto poderá encontrar a arquitetura do projeto e o script de criação do database**
