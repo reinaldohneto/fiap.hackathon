@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "L6DLStdqDeJt9vAtq+Yo6RS8Cjv45Jy6orfIs6zkBW7QhTqTClgkUEGVpUB6HJ9LVwdd5pmiGg81hqnuDo5a9Q==",
+  "dgSpecHash": "9oq1zP47nCjO6NgmE0JNUYI2nzo3NuxcAsKmnTy2aQtchRnsRtrUOGOmsA2KhO43lQqgEVJgSHORAywpzAUnJw==",
   "success": true,
   "projectFilePath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Worker\\Fiap.Hackathon.Worker.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\reina\\.nuget\\packages\\ffmpeg.autogen\\6.1.0\\ffmpeg.autogen.6.1.0.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\ffmpegcore\\5.1.0\\ffmpegcore.5.1.0.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\instances\\3.0.0\\instances.3.0.0.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",

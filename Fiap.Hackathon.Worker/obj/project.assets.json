@@ -2,6 +2,48 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "FFmpeg.AutoGen/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FFmpeg.AutoGen.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FFmpeg.AutoGen.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FFMpegCore/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Instances": "3.0.0",
+          "System.Text.Json": "7.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/FFMpegCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FFMpegCore.dll": {}
+        }
+      },
+      "Instances/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Instances.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Instances.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -704,6 +746,49 @@
     }
   },
   "libraries": {
+    "FFmpeg.AutoGen/6.1.0": {
+      "sha512": "IrsaGnj722B6Hoh/2NLwuHE8z5ZNOmrDA5ackhyCsE2dv2YSciym4MXkIvoPSVRF3MluhO8BtmM9KxaDNWeP/A==",
+      "type": "package",
+      "path": "ffmpeg.autogen/6.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "ffmpeg.autogen.6.1.0.nupkg.sha512",
+        "ffmpeg.autogen.nuspec",
+        "lib/netstandard2.0/FFmpeg.AutoGen.dll",
+        "lib/netstandard2.0/FFmpeg.AutoGen.xml",
+        "lib/netstandard2.1/FFmpeg.AutoGen.dll",
+        "lib/netstandard2.1/FFmpeg.AutoGen.xml"
+      ]
+    },
+    "FFMpegCore/5.1.0": {
+      "sha512": "cCzfCElrq9IziByiho3oeK/T2hDfM0jjMQmo22cLoAt7bptNNhEiRhF9X0lKwLBoK9vjZKn06+gaUfbfmS9m3Q==",
+      "type": "package",
+      "path": "ffmpegcore/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "ffmpegcore.5.1.0.nupkg.sha512",
+        "ffmpegcore.nuspec",
+        "lib/netstandard2.0/FFMpegCore.dll"
+      ]
+    },
+    "Instances/3.0.0": {
+      "sha512": "wlZ0V+S7X7kMKbjC7EZJf5A1FNlldQrS0tKMNXP1Ued/6XCo6t5kpFDS3X72cd+SGaX+q+FOlWO7r18GlxcKAQ==",
+      "type": "package",
+      "path": "instances/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/README.md",
+        "contentFiles/any/netstandard2.0/README.md",
+        "instances.3.0.0.nupkg.sha512",
+        "instances.nuspec",
+        "lib/netstandard2.0/Instances.dll"
+      ]
+    },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "sha512": "0J/9YNXTMWSZP2p2+nvl8p71zpSwokZXZuJW+VjdErkegAnFdO1XlqtA62SJtgVYHdKu3uPxJHcMR/r35HwFBA==",
       "type": "package",
@@ -1788,6 +1873,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "FFMpegCore >= 5.1.0",
+      "FFmpeg.AutoGen >= 6.1.0",
       "Fiap.Hackathon.Application >= 1.0.0",
       "Microsoft.Extensions.Hosting >= 8.0.0"
     ]
@@ -1836,6 +1923,14 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FFMpegCore": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
+          "FFmpeg.AutoGen": {
+            "target": "Package",
+            "version": "[6.1.0, )"
+          },
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
             "version": "[8.0.0, )"
