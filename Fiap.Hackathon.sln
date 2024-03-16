@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Hackathon.Infra", "Fia
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Hackathon.Application", "Fiap.Hackathon.Application\Fiap.Hackathon.Application.csproj", "{0A278A96-385C-4947-802F-A234C89C5E11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Hackathon.WebPage", "Fiap.Hackathon.WebPage\Fiap.Hackathon.WebPage.csproj", "{268778DF-E59D-4BF8-8CF2-31F73F1BAAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{0A278A96-385C-4947-802F-A234C89C5E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A278A96-385C-4947-802F-A234C89C5E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A278A96-385C-4947-802F-A234C89C5E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268778DF-E59D-4BF8-8CF2-31F73F1BAAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268778DF-E59D-4BF8-8CF2-31F73F1BAAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268778DF-E59D-4BF8-8CF2-31F73F1BAAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268778DF-E59D-4BF8-8CF2-31F73F1BAAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
