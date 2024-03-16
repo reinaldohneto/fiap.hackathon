@@ -6,3 +6,15 @@ services:
       ACCEPT_EULA: "Y"
     ports:
       - "1433:1433"
+      
+  rabbitmq:
+    container_name: fiap-hackathon-api-rabbitmq
+    image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=fiap
+      - RABBITMQ_DEFAULT_PASS=123456
+    volumes:
+      - /data
+    ports:
+      - "15672:15672"
+      - "5672:5672"

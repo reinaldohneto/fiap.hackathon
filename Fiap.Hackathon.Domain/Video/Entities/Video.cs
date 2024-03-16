@@ -1,7 +1,7 @@
 using Fiap.Hackathon.Domain.Common;
 using Microsoft.AspNetCore.Identity;
 
-namespace Fiap.Hackathon.Domain;
+namespace Fiap.Hackathon.Domain.Video.Entities;
 
 public class Video : BaseEntity
 {
