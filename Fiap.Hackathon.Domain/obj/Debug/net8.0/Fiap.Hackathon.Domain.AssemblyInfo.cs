@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fiap.Hackathon.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e352dac9d894ff3a5c4ac076800de537d94f13cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+125c030331d24f095b9438856fae4a4ed6b796bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fiap.Hackathon.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fiap.Hackathon.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
