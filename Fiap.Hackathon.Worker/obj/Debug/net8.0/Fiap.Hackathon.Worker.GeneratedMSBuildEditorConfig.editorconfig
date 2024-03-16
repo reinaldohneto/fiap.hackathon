@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Fiap.Hackathon.Worker
-build_property.ProjectDir = C:\Programacao\Fiap\fiap.hackathon\Fiap.Hackathon.Worker\
+build_property.ProjectDir = C:\Users\Jaelson\Desktop\Hackaton\hack\fiap.hackathon\Fiap.Hackathon.Worker\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

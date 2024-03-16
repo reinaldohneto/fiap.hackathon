@@ -45,19 +45,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\reina\\.nuget\\packages\\": {}
+    "C:\\Users\\Jaelson\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Application\\Fiap.Hackathon.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Jaelson\\Desktop\\Hackaton\\hack\\fiap.hackathon\\Fiap.Hackathon.Application\\Fiap.Hackathon.Application.csproj",
       "projectName": "Fiap.Hackathon.Application",
-      "projectPath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Application\\Fiap.Hackathon.Application.csproj",
-      "packagesPath": "C:\\Users\\reina\\.nuget\\packages\\",
-      "outputPath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Application\\obj\\",
+      "projectPath": "C:\\Users\\Jaelson\\Desktop\\Hackaton\\hack\\fiap.hackathon\\Fiap.Hackathon.Application\\Fiap.Hackathon.Application.csproj",
+      "packagesPath": "C:\\Users\\Jaelson\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jaelson\\Desktop\\Hackaton\\hack\\fiap.hackathon\\Fiap.Hackathon.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\reina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jaelson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -65,15 +65,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.pkg.github.com/terrainvest/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Infra\\Fiap.Hackathon.Infra.csproj": {
-              "projectPath": "C:\\Programacao\\Fiap\\fiap.hackathon\\Fiap.Hackathon.Infra\\Fiap.Hackathon.Infra.csproj"
+            "C:\\Users\\Jaelson\\Desktop\\Hackaton\\hack\\fiap.hackathon\\Fiap.Hackathon.Infra\\Fiap.Hackathon.Infra.csproj": {
+              "projectPath": "C:\\Users\\Jaelson\\Desktop\\Hackaton\\hack\\fiap.hackathon\\Fiap.Hackathon.Infra\\Fiap.Hackathon.Infra.csproj"
             }
           }
         }
@@ -103,7 +102,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
